@@ -1,16 +1,16 @@
 #include<iostream>
 
-struct List{
-   int data = 0;
-   List*link = NULL;
+typedef struct snode_t {
+    int data;
+    struct snode_t *next;
+} SListNode;
+
+typedef struct snode_t{
+   unsigned _size;
+   SListNode *_head;
 };
 
-bool isEmpty(List*head){
-   if(head == NULL)
-      return false;
-   return true;
-}
-
 int main(){
+   
 
 }
